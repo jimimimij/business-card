@@ -32,14 +32,17 @@ p {
 
 .button {
     display: block;
+    width: 100%;
+    box-sizing: border-box;
     margin: 25px auto 15px;
     padding: 16px 25px;
     background: #007aff;
     color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 12px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .note {
@@ -53,23 +56,40 @@ p {
 
 <div class="card">
 
-<h1>Jermey Chiang</h1>
+    <h1>Jermey Chiang</h1>
 
-<p>Acculink Enterprises Corporation</p>
+    <p>Acculink Enterprises Corporation</p>
 
-<p>Add my contact information to your phone.</p>
+    <p>Add my contact information to your phone.</p>
 
-<a class="button"
-href="https://raw.githubusercontent.com/jimimimij/business-card/refs/heads/main/Jermey_C.vcf"
-download="Jermey_Chiang.vcf">
-    Add Contact
-</a>
+    <button class="button" onclick="addContact()">
+        Add Contact
+    </button>
 
-<p class="note">
-iPhone and Android supported
-</p>
+    <p class="note">
+        iPhone and Android supported
+    </p>
 
 </div>
+
+<script>
+function addContact() {
+
+    const vcfUrl =
+        "https://raw.githubusercontent.com/jimimimij/business-card/refs/heads/main/Jermey_C.vcf";
+
+    const link = document.createElement("a");
+
+    link.href = vcfUrl;
+    link.download = "Jermey_Chiang.vcf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+}
+</script>
 
 </body>
 </html>
