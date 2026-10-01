@@ -1,11 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Jermey Chiang
-N:Chiang;Jermey;;;
+FN:Jeremy Chiang
+N:Chiang;Jeremy;;;
 ORG:Acculink Enterprises Corporation
 TITLE:President
 TEL;TYPE=CELL:+639764292860
 EMAIL;TYPE=WORK:jeremy@acculink.com.ph
 URL:https://www.acculink.com.ph
+URL;TYPE=WeChat:https://blankpage.one/note/2676teyjc
+URL;TYPE=Facebook:https://www.facebook.com/jeremyusd
+URL;TYPE=WhatsApp:https://wa.me/qr/S266ELCWPTKMP1
 ADR;TYPE=WORK:;;No. 345 M. J. Cuenco Ave, Corner L. Tudtud St;Cebu City;Cebu;6000;Philippines
 END:VCARD
